@@ -1,7 +1,7 @@
 package com.jaroso.trazabilidadproductos2026.security;
 
 
-import com.jaroso.pedidos2026.entities.User;
+import com.jaroso.trazabilidadproductos2026.entities.User;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import io.jsonwebtoken.security.SignatureException;

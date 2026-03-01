@@ -1,10 +1,10 @@
 package com.jaroso.trazabilidadproductos2026.controllers;
 
-import com.jaroso.pedidos2026.dtos.AuthDto;
-import com.jaroso.pedidos2026.dtos.UserCreateDto;
-import com.jaroso.pedidos2026.dtos.UserDto;
-import com.jaroso.pedidos2026.dtos.UserLoginDto;
-import com.jaroso.pedidos2026.services.AuthService;
+import com.jaroso.trazabilidadproductos2026.dtos.AuthDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserCreateDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserLoginDto;
+import com.jaroso.trazabilidadproductos2026.services.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

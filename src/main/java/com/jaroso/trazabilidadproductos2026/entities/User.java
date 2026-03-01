@@ -1,7 +1,7 @@
 package com.jaroso.trazabilidadproductos2026.entities;
 
 
-import com.jaroso.pedidos2026.security.UserAuthority;
+import com.jaroso.trazabilidadproductos2026.security.UserAuthority;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,6 +29,7 @@ public class User implements UserDetails {
     private String userName;
 
     private String password;
+    private String name;
 
     private String email;
 
@@ -39,10 +40,11 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private List<UserAuthority> authorities = new ArrayList<>();
 
-    public User(Long id, String username, String password, String email, List<UserAuthority> authorities) {
+    public User(Long id, String username, String password,String name, String email, List<UserAuthority> authorities) {
         this.id = id;
         this.userName = username;
         this.password = password;
+        this.name = name;
         this.email = email;
         this.authorities = authorities;
     }

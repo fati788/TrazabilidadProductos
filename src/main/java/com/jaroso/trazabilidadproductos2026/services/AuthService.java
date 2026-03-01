@@ -1,14 +1,14 @@
 package com.jaroso.trazabilidadproductos2026.services;
 
 
-import com.jaroso.pedidos2026.dtos.AuthDto;
-import com.jaroso.pedidos2026.dtos.UserCreateDto;
-import com.jaroso.pedidos2026.dtos.UserDto;
-import com.jaroso.pedidos2026.dtos.UserLoginDto;
-import com.jaroso.pedidos2026.entities.User;
-import com.jaroso.pedidos2026.repositories.UserRepository;
-import com.jaroso.pedidos2026.security.JwtService;
-import com.jaroso.pedidos2026.security.UserAuthority;
+import com.jaroso.trazabilidadproductos2026.dtos.AuthDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserCreateDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserLoginDto;
+import com.jaroso.trazabilidadproductos2026.entities.User;
+import com.jaroso.trazabilidadproductos2026.repositories.UserRepository;
+import com.jaroso.trazabilidadproductos2026.security.JwtService;
+import com.jaroso.trazabilidadproductos2026.security.UserAuthority;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +49,7 @@ public class AuthService {
                 userDTO.userName(),
                 passwordEncoder.encode(userDTO.password()),
                 userDTO.email(),
+                userDTO.name(),
                 List.of(UserAuthority.READ)
         );
 
@@ -61,7 +62,7 @@ public class AuthService {
         //Si no existe lo insertamos en BBDD y devolvemos un UserDto
         this.repository.save(user);
 
-        return new UserDto(user.getId(), user.getUsername(), user.getEmail());
+        return new UserDto(user.getId(), user.getUsername(), user.getEmail() , user.getName());
     }
 
     /**

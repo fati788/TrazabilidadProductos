@@ -1,7 +1,7 @@
 package com.jaroso.trazabilidadproductos2026.services;
 
-import com.jaroso.pedidos2026.dtos.UserCreateDto;
-import com.jaroso.pedidos2026.dtos.UserDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserCreateDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserDto;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.List;

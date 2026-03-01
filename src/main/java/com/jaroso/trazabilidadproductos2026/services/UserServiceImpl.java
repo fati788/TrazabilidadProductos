@@ -1,10 +1,10 @@
 package com.jaroso.trazabilidadproductos2026.services;
 
-import com.jaroso.pedidos2026.dtos.UserCreateDto;
-import com.jaroso.pedidos2026.dtos.UserDto;
-import com.jaroso.pedidos2026.entities.User;
-import com.jaroso.pedidos2026.mappers.UserMapper;
-import com.jaroso.pedidos2026.repositories.UserRepository;
+import com.jaroso.trazabilidadproductos2026.dtos.UserCreateDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserDto;
+import com.jaroso.trazabilidadproductos2026.entities.User;
+import com.jaroso.trazabilidadproductos2026.mappers.UserMapper;
+import com.jaroso.trazabilidadproductos2026.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

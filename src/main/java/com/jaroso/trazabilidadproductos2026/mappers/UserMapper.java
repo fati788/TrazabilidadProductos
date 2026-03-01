@@ -1,9 +1,9 @@
 package com.jaroso.trazabilidadproductos2026.mappers;
 
 
-import com.jaroso.pedidos2026.dtos.UserCreateDto;
-import com.jaroso.pedidos2026.dtos.UserDto;
-import com.jaroso.pedidos2026.entities.User;
+import com.jaroso.trazabilidadproductos2026.dtos.UserCreateDto;
+import com.jaroso.trazabilidadproductos2026.dtos.UserDto;
+import com.jaroso.trazabilidadproductos2026.entities.User;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

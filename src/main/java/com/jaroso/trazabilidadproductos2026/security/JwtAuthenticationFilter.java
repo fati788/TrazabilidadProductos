@@ -1,7 +1,7 @@
 package com.jaroso.trazabilidadproductos2026.security;
 
 
-import com.jaroso.pedidos2026.services.UserService;
+import com.jaroso.trazabilidadproductos2026.services.UserService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

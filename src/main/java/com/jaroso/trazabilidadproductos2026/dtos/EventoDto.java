@@ -1,4 +1,6 @@
 package com.jaroso.trazabilidadproductos2026.dtos;
 
-public record EventoDto() {
+import java.time.LocalDateTime;
+
+public record EventoDto(Long id , LocalDateTime timestamp, String tipoEvento , String ubicacion , String observaciones) {
 }
