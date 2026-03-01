@@ -69,23 +69,6 @@ public class ProductoServiceImpl implements ProductoService {
       }
     }
 
-  /*  @Override
-    public Optional<LoteDto> crearLote(Long productoId, LoteCreateDto dto) {
-        Optional<Producto> productoOptional = repo.findById(productoId);
-        if (productoOptional.isEmpty()){
-            return  Optional.empty();
-        }
-
-         //Sacar el producto
-        Producto producto = productoOptional.get();
-        //El lote
-        Lote lote = loteMapper.loteCreateDtoToEntity(dto);
-        lote.setProducto(producto);
-        producto.addLote(lote);
-        repo.save(producto);
-       return Optional.of(loteMapper.toDto(lote));
-
-    }*/
   @Override
   public Optional<LoteDto> crearLote(Long productoId, LoteCreateDto dto) {
 

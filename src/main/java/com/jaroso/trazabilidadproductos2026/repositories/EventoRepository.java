@@ -11,14 +11,7 @@ import java.util.List;
 
 @Repository
 public interface EventoRepository extends JpaRepository<EventoTrazabilidad , Long> {
-    /*
-      Optional<Task> findByTitle(String title);
-      List<Task> findAllByOrderByTitleAsc();
-      List<Task> findAllByOrderByTitleDesc();
 
-      @Query("Select t from tasks t where t.title LIKE %:texto%")
-      List<Task> buscarPorTitulo(@Param("texto") String texto);
-}*/
     List<EventoTrazabilidad> findByLoteId(Long loteId);
 
     List<EventoTrazabilidad> findByLoteIdOrderByTimestampAsc(Long loteId);
